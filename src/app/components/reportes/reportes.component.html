@@ -1,0 +1,18 @@
+<form novalidate #form="ngForm" (ngSubmit)="submitForm(form)" (reset)="resetForm()">
+    <div class="form-group">
+        <label>ID DE USUARIO</label>
+        <input class="form-control" name="name" [(ngModel)]="userdata.idUsuario" required />
+    </div>
+    <div class="form-group">
+        <label>NOMBRE</label>
+        <input class="form-control" name="category" [(ngModel)]="userdata.nombre" required />
+    </div>
+    <div class="form-group">
+        <label>NUMERO DE DOCUMENTO</label>
+        <input class="form-control" name="price" [(ngModel)]="userdata.numDoc" required pattern="^[0-9\.]+$" />
+    </div>
+    <button type="submit" class="btn btn-primary m-1" [disabled]="form.invalid">
+        Save
+    </button>
+    <button type="reset" class="btn btn-secondary m-1">Cancel</button>
+</form>

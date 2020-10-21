@@ -1,0 +1,16 @@
+<table class="table table-sm table-bordered table-striped">
+    <tr>
+
+        <th>ID DE USUARIO</th>
+        <th>NOMBRE</th>
+        <th>NUMERO DE DOCUMENTO</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let item of getData()">
+        <td>{{item.idUsuario}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.numDoc }}</td>
+
+    </tr>
+
+</table>
