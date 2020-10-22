@@ -1,6 +1,6 @@
 export class UserData {
     constructor(
-                public idUsuario?: any,
-                public nombre?: any,
-                public numDoc?: any) {}
+                public idUsuario?: string,
+                public nombre?: string,
+                public numDoc?: number) {}
 }

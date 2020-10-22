@@ -18,8 +18,8 @@ import { UserData } from '../model/userdata.model';
 
 
 export class ReportesComponent implements OnInit {
-  userdata: UserData = new UserData();
-  userdatas: UserData[] = new Array<UserData>();
+  private userdata: UserData = new UserData();
+  
   constructor(public auth: AuthService, private model: Model) { }
 
   submitForm(form: NgForm) {
